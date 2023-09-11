@@ -1,19 +1,27 @@
-/* Checking the environment of the dataset */ 
-SELECT DISTINCT EducationField, Department
+/* Checking the totality of the dataset */ 
+SELECT *
+FROM `rational-logic-383310.hr.HR` 
+-----------------------------------------------
+/* SHOWING the number of department */ 
+SELECT DISTINCT(Department)
 FROM `rational-logic-383310.hr.HR` 
 
-EducationField	Department
-Medical	Research & Development
-Life Sciences	Sales
-Marketing	Sales
-Medical	Sales
-Medical	Human Resources
-Life Sciences	Research & Development
-Human Resources	Human Resources
-Life Sciences	Human Resources
-Other	Research & Development
-Other	Human Resources
-Technical Degree	Human Resources
-Other	Sales
-Technical Degree	Sales
-Technical Degree	Research & Development
+Department
+Research & Development
+Sales
+Human Resources
+
+There is 4 
+-----------------------------------------------------
+/* SHOWING the number of Education field */ 
+SELECT DISTINCT(EducationField)
+FROM `rational-logic-383310.hr.HR` 
+
+EducationField
+Medical
+Life Sciences
+Marketing
+Human Resources
+Other
+Technical Degree
+-------------------------------------------------------
