@@ -1,3 +1,4 @@
+/* CLEANING THE DATASET */------------------------
 /* checking the entire dataset */
 SELECT * 
 FROM `rational-logic-383310.hr.HR` 
@@ -19,3 +20,25 @@ FROM
   OR MonthlyIncome is NULL
   OR MonthlyRate is NULL
   OR DailyRate is NULL
+-----------------------------------------------------
+/* counting number of employee in the dataset */
+SELECT DISTINCT COUNT(EmployeeCount) AS total_employee
+FROM `rational-logic-383310.hr.HR` 
+
+ /* STARTING THE ANALYSIS*/ -----------------------------------------------------
+/* counting number of employee Per gender in the dataset */
+SELECT DISTINCT COUNT(EmployeeCount) AS total_employee, Gender
+FROM `rational-logic-383310.hr.HR` 
+GROUP BY Gender
+------------------------------------------------------
+/* counting number of employee Per gender by department in the dataset */
+
+SELECT DISTINCT COUNT(EmployeeCount) AS total_employee, Gender, Department
+FROM `rational-logic-383310.hr.HR` 
+GROUP BY Gender, Department
+--------------------------------------------------------
+/* counting number of employee Per department in the dataset */
+
+SELECT DISTINCT COUNT(Department) AS total_employee_department, Department
+FROM `rational-logic-383310.hr.HR` 
+GROUP BY Department
