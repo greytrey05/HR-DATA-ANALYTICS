@@ -42,3 +42,21 @@ GROUP BY Gender, Department
 SELECT DISTINCT COUNT(Department) AS total_employee_department, Department
 FROM `rational-logic-383310.hr.HR` 
 GROUP BY Department
+---------------------------------------------------------
+/* analyzing the average,min and maximum age per department */
+
+SELECT DISTINCT avg(age) AS average_age, min(Age) AS minimum_age, max(Age) AS maximum_age, Department
+FROM `rational-logic-383310.hr.HR` 
+group by Department
+-----------------------------------------------------------
+/* analyzing the average,min and maximum education per department */
+
+SELECT DISTINCT avg(Education) AS avg_education, min(Education) AS min_education, max(Education) as max_education, Department
+FROM `rational-logic-383310.hr.HR` 
+GROUP BY Department
+-----------------------------------------------------------
+/* analyzing the average,min and maximum monthly income per department */
+
+SELECT DISTINCT avg(MonthlyIncome) AS avg_income, min(MonthlyIncome) AS min_income, max(MonthlyIncome) as max_income, Department, Gender
+FROM `rational-logic-383310.hr.HR` 
+GROUP BY Department, Gender
