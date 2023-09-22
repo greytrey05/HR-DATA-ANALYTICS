@@ -1,0 +1,28 @@
+name: SQL Workflow
+
+on:
+  push:
+    branches:
+      - main  # Adjust the branch name as needed
+
+jobs:
+  run-sql:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up PostgreSQL
+      uses: actions/setup-postgresql@v1
+      with:
+        postgresql-version: '13'  # Adjust the PostgreSQL version as needed
+
+    - name: Run SQL script
+      env:
+        POSTGRES_DB: your_database_name
+        POSTGRES_USER: your_database_user
+        POSTGRES_PASSWORD: ${{ secrets.DB_PASSWORD }}
+      run: |
+        psql -h localhost -U $POSTGRES_USER -d $POSTGRES_DB -a -f path/to/your/sql/script.sql
+.
