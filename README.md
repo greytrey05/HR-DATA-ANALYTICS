@@ -3,7 +3,7 @@
 Departmental Analysis:
 
 Business Task: Assessing the performance and satisfaction of different departments.
-What am I trying to see: I want to determine if certain departments have higher or lower employee satisfaction level and turnover rates.
+What am I trying to see: I want to determine if certain departments have higher or lower employee satisfaction level.
 This information can help with targeted interventions or improvements.
 
 ## description of the dataset
@@ -26,7 +26,8 @@ This information can help with targeted interventions or improvements.
 * JobRole: The role or job title of the employee.
 * JobSatisfaction: The employee's satisfaction with their job.
 * MaritalStatus: The marital status of the employee (e.g., 'Single', 'Married').
-* MonthlyIncome: The monthly income of the employee.
+*
+ MonthlyIncome: The monthly income of the employee.
 * MonthlyRate: The monthly rate for the employee.
 * NumCompaniesWorked: The number of companies the employee has worked for.
 * Over18: Indicates whether the employee is over 18 years old (typically constant, e.g., 'true').
