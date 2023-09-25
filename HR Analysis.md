@@ -1,99 +1,117 @@
-To answer the business question on this project I am going to use Bigquery SQL to clean and analyze the data.
+To tackle the central inquiry of this project, I'll be utilizing Bigquery SQL for the crucial tasks of data cleaning and analysis.
 
 #### Step 1 - Exploring the dataset
 
-Going to schema and check if the data matches the datatype before analysis
+Our first order of business is to delve into the dataset, ensuring its reliability by verifying that the data aligns with the specified datatypes.
 
 ![](https://github.com/greytrey05/HR-DATA-ANALYTICS/blob/main/1.png)
 
-The data contains integer, string and boolean. it has 35 columns and 1470 rows.
-
-Check the dataset, I can check the dataset either on going to "Preview" or writting the query with (*)
+This dataset comprises various data types, including integers, strings, and booleans, and boasts a total of 35 columns and 1470 rows. We have two ways to examine the dataset: one is through the "Preview" option, and the other is by writting a SQL queries.
 
 ![](https://github.com/greytrey05/HR-DATA-ANALYTICS/blob/main/2.png)
 
-Now I can see how the dataset is strutured under the header columns.
+This approach grants us a comprehensive view of how the dataset is organized beneath the column headers.
 
 #### Step 2 - Cleaning the dataset
 
-* checking if there are nulls entries
+* To maintain data integrity, our next step entails identifying and addressing null entries:
 
 ![](https://github.com/greytrey05/HR-DATA-ANALYTICS/blob/main/3.png)
 
-* Checking for extra spaces or charactere
+* Additionally, we'll scrutinize the dataset for any extraneous spaces or characters that might compromise its quality:
 
 ![](https://github.com/greytrey05/HR-DATA-ANALYTICS/blob/main/4.png)
 
 #### Step 3 - Start analyzing the dataset
 
-* Counting the number of employee in the entire departments
+* First, we'll count the number of employees across all departments:
 
 ![](https://github.com/greytrey05/HR-DATA-ANALYTICS/blob/main/6.png)
 
-* Counting the number of employee per gender
+* we'll examine the gender distribution among employees:
 
 ![](https://github.com/greytrey05/HR-DATA-ANALYTICS/blob/main/7.png)
 
-* Counting the number of employee per departments and gender
+* We'll also take a closer look at employee counts categorized by department and gender:
 
 ![](https://github.com/greytrey05/HR-DATA-ANALYTICS/blob/main/8.png)
 
-* Counting the number of employee per departments
+* For a broader perspective, we'll count the number of employees per department:
 
 ![](https://github.com/greytrey05/HR-DATA-ANALYTICS/blob/main/9.png)
 
-* Analyzing the min, max and average age per departments
+* Now, it's time to analyze the minimum, maximum, and average ages within each department:
 
 ![](https://github.com/greytrey05/HR-DATA-ANALYTICS/blob/main/10.png)
 
-This analysis showed that most departments have an average age of 37 year with a average min age of 19 and max of 60 year. 
+* This examination reveals that most departments exhibit an average age of 37 years, with age ranges spanning from 19 to 60.
 
 ![](https://github.com/greytrey05/HR-DATA-ANALYTICS/blob/main/14.png)
 
-This results showed that the leading departments is sales followed by human ressources and research & development in termes of average monthly income
+We also discover that the Sales department leads in terms of average monthly income, closely followed by Human Resources and Research & Development.
 
-* Analyzing the min, max, average monthly income including gender by departments
+* Our analysis extends to examining income disparities based on department and gender:
 
 ![](https://github.com/greytrey05/HR-DATA-ANALYTICS/blob/main/11.png) 
 
-Here we can see that the min income in sales for a Female is 1200 compare to Male is 1052. We have a difference of 148 point which is equivalent to a difference of 14% between the minimum income of Female and Men is the sales departments.
-The maximum income in sales for Female is 19845 and Male is 19847 which is a 2 point difference equal to a percentage of 0.01%
-The average income in sales for Female is 6972 and for male is 6950, there is 22 point of difference between the average income equal to 0.32% difference.
+In the analysis, we observe noteworthy income disparities within various departments. Specifically:
 
-The min income in research & development for female is 1129 compare to Male is 1009. there is a 120 point gap in minimum income which is equivalent to a difference of 12%.
-The maximum income in R&D for female is 19973 and for Male is 19999 there is a 26 point difference that is equivalent to 0.13% difference.
-The average income in R&D for Female is 6514 and 6130 for Male there is a 384 point difference between the two averages which is equal to 6.26% difference.
+###### Sales Department:
 
-The min income in human ressources for female is 2109 and for male is 1555 that is a 554 point difference it is equal to 36% difference.
-The max income for female is 19658 and for Male is 19717 which is 59 point difference it is equal to a 0.3% difference.
-The average income in human ressources for female is 7264 and for Male is 6371 the diffrence is 293 point which is equal to 4.2% difference
+The minimum income for females stands at 1200, while for males, it is 1052, reflecting a substantial difference of 148, equivalent to a 14% variance in minimum income.
+Comparatively, the maximum income for females in Sales reaches 19845, just 2 less than their male counterparts at 19847, indicating a negligible 0.01% difference.
+When considering average incomes, females in Sales earn 6972, whereas males average 6950, resulting in a slight discrepancy of 22 or 0.32%.
 
-Conclusion in most of department they try to have an equal pay and tend to pay female more than man but this could possibly explain with the education level and the years at the company but this would be for a another analysis.
+###### Research & Development Department:
 
-* Analyzing the criteria that shows satisfaction in each departments
+Within the Research & Development (R&D) department, the minimum income for females is 1129, whereas males receive a minimum of 1009, leading to a notable gap of 120, equivalent to a 12% disparity.
+For the maximum income in R&D, females earn 19973, whereas males receive 19999, signifying a 0.13% difference, which is marginal.
+In terms of average income, females in R&D earn 6514, while males average 6130, resulting in a more substantial difference of 384 or 6.26%.
+
+###### Human Resources Department:
+
+The Human Resources (HR) department exhibits substantial income differences. Females in HR receive a minimum income of 2109, significantly higher than the 1555 minimum for males, resulting in a pronounced 554 gap, equivalent to a 36% difference.
+In contrast, the maximum income for females in HR is 19658, while males earn 19717, leading to a minimal 0.3% difference, amounting to a 59 variance.
+The average income in HR for females is 7264, surpassing the average for males at 6371 by 293 or 4.2%.
+
+*In summary*, a closer examination reveals income disparities across departments. While some departments aim to maintain equitable pay structures, discrepancies persist, possibly influenced by factors such as education levels and tenure within the company. Further analysis is warranted to comprehensively understand these dynamics.
+
+* We delve into criteria indicative of employee satisfaction:
 
 ![](https://github.com/greytrey05/HR-DATA-ANALYTICS/blob/main/12.png)
 
-The analysis show on average a certain trend from the people in each department that leads to a better satisfaction. R&D, Sales, and human ressources have an average a total year in the company is 11 years, average years at the company is 7 years, average worklife balance is rounded at 3 point, average job satisfaction is 3, average job involment is also at 3 point, environment satisfaction 3 point, average age is 37 years, average job level is 2 point, average number of company is at 3 and average monthly income is 6503.
-this mean on average for a person who works in those three department could be satisfied around the age of 37 years with a job involvment around 3 which is the second highest rank job involvment, had previously worked in at least 2.5 company, have an average job level of 2 and an average monthly income of 6503. 
+The analysis reveals a consistent trend among employees in certain departments, contributing to heightened job satisfaction. Specifically, the Research & Development (R&D), Sales, and Human Resources (HR) departments exhibit notable characteristics:
 
-* Analyzing the criteria that shows performance in each departments
+On average, employees in these departments possess a substantial tenure, with a total of 11 years at the company and an average of 7 years in their current roles.
+A harmonious work-life balance is evident, with an average score of 3, denoting a generally positive equilibrium.
+Employee job satisfaction is also commendable, with an average rating of 3, indicating a contented workforce.
+Similarly, job involvement garners an average score of 3, reflecting a high level of engagement and commitment.
+Employees within these departments express satisfaction with their working environment, scoring an average of 3 in this regard.
+The typical age of employees in these departments hovers around 37 years.
+Job levels are moderately distributed, with an average rating of 2.
+On average, employees have experience with approximately 3 different companies in their career trajectories.
+Furthermore, the average monthly income for employees in these departments stands at 6503.
+
+*In summary* , employees within R&D, Sales, and HR departments tend to experience job satisfaction and engagement, with an average age of 37 years. These individuals typically possess a job involvement level rated as the second-highest, reflecting a significant degree of commitment. Their prior experience with an average of 2.5 different companies suggests a diversified career background. Moreover, they maintain an average job level of 2, alongside a monthly income averaging 6503.
+
+* Lastly, we explore criteria associated with employee performance:
 
 ![](https://github.com/greytrey05/HR-DATA-ANALYTICS/blob/main/13.png)
 
-Analyzing the criteria that demonstrate performance an individual is considered as performant throught this analysis by having an average of 3 in education, the average performance employee is at 3 point, he has to turn around 3 yearly training and have an average of 4 years in the current company.
+
+When evaluating the metrics that signify individual performance, we identify several key factors that contribute to a high-performing profile through this analysis. These attributes encompass:
+
+* Education: On average, high-performing individuals maintain an education score of 3, indicative of a solid educational background.
+
+* Performance Ratings: High-performance employees consistently achieve an average performance rating of 3 points, underlining their effectiveness and competence.
+
+* Continuous Learning: They actively engage in an average of three yearly training sessions, highlighting their commitment to staying updated and acquiring new skills.
+
+* Tenure: On average, these individuals have amassed approximately four years of service with their current employer, signifying a stable and enduring professional commitment.
+
+In summary, individuals deemed as high-performers demonstrate a balanced combination of education, consistent top-notch performance, a commitment to ongoing learning, and an established tenure within their current company.
 
 
 #### Conclusion
 
-Our examination of income distributions across different departments has revealed noteworthy disparities. In the Sales department, we observe a relatively marginal difference in income between genders, with females earning slightly higher on average. Conversely, the Research & Development department showcases a gender-driven income discrepancy, particularly in terms of average income. Notably, the Human Resources department demonstrates a substantial income differential favoring female employees.
-
-It is imperative to acknowledge that these income variations may be influenced by factors beyond gender, such as educational attainment and tenure within the organization. Consequently, a more comprehensive analysis is required to elucidate these complex dynamics.
-
-Furthermore, our investigation has unveiled intriguing trends that correlate with higher employee satisfaction levels. Departments such as Research & Development, Sales, and Human Resources exhibit distinctive characteristics, including an average tenure of 11 years, an average job level of 2, balanced work-life equilibrium, job satisfaction, and job involvement scores of around 3. Moreover, employees within these departments tend to be approximately 37 years old, possess experience with multiple employers, and earn an average monthly income of 6503.
-
-In light of these findings, it is reasonable to infer that individuals within these departments are more likely to achieve elevated job satisfaction around the age of 37, accompanied by a commendable level of job involvement, moderate job rank, and a standard monthly income.
-
-Turning our attention to performance indicators, our analysis suggests that high-performing employees are characterized by an average educational attainment score of 3, an average performance rating of 3, active participation in approximately three yearly training sessions, and a tenure of roughly four years with the current employer.
-
-While our analysis provides valuable insights into departmental variations and prevalent trends, it is incumbent upon us to embark on further inquiries to gain a comprehensive understanding of the underlying factors contributing to these patterns. These insights will serve as the foundation for targeted interventions and enhancements aimed at fostering a more equitable and satisfying work environment.
+The analysis has illuminated the strengths and attributes that contribute to enhanced job satisfaction within specific departments. These insights can guide targeted interventions and improvements to further elevate employee satisfaction and performance across the organization. Moreover, the identification of high-performance indicators provides a valuable framework for recognizing and nurturing top talent within the company.
