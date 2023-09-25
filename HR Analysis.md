@@ -73,3 +73,27 @@ Conclusion in most of department they try to have an equal pay and tend to pay f
 * Analyzing the criteria that shows satisfaction in each departments
 
 ![](https://github.com/greytrey05/HR-DATA-ANALYTICS/blob/main/12.png)
+
+The analysis show on average a certain trend from the people in each department that leads to a better satisfaction. R&D, Sales, and human ressources have an average a total year in the company is 11 years, average years at the company is 7 years, average worklife balance is rounded at 3 point, average job satisfaction is 3, average job involment is also at 3 point, environment satisfaction 3 point, average age is 37 years, average job level is 2 point, average number of company is at 3 and average monthly income is 6503.
+this mean on average for a person who works in those three department could be satisfied around the age of 37 years with a job involvment around 3 which is the second highest rank job involvment, had previously worked in at least 2.5 company, have an average job level of 2 and an average monthly income of 6503. 
+
+* Analyzing the criteria that shows performance in each departments
+
+![](https://github.com/greytrey05/HR-DATA-ANALYTICS/blob/main/13.png)
+
+Analyzing the criteria that demonstrate performance an individual is considered as performant throught this analysis by having an average of 3 in education, the average performance employee is at 3 point, he has to turn around 3 yearly training and have an average of 4 years in the current company.
+
+
+#### Conclusion
+
+Our examination of income distributions across different departments has revealed noteworthy disparities. In the Sales department, we observe a relatively marginal difference in income between genders, with females earning slightly higher on average. Conversely, the Research & Development department showcases a gender-driven income discrepancy, particularly in terms of average income. Notably, the Human Resources department demonstrates a substantial income differential favoring female employees.
+
+It is imperative to acknowledge that these income variations may be influenced by factors beyond gender, such as educational attainment and tenure within the organization. Consequently, a more comprehensive analysis is required to elucidate these complex dynamics.
+
+Furthermore, our investigation has unveiled intriguing trends that correlate with higher employee satisfaction levels. Departments such as Research & Development, Sales, and Human Resources exhibit distinctive characteristics, including an average tenure of 11 years, an average job level of 2, balanced work-life equilibrium, job satisfaction, and job involvement scores of around 3. Moreover, employees within these departments tend to be approximately 37 years old, possess experience with multiple employers, and earn an average monthly income of 6503.
+
+In light of these findings, it is reasonable to infer that individuals within these departments are more likely to achieve elevated job satisfaction around the age of 37, accompanied by a commendable level of job involvement, moderate job rank, and a standard monthly income.
+
+Turning our attention to performance indicators, our analysis suggests that high-performing employees are characterized by an average educational attainment score of 3, an average performance rating of 3, active participation in approximately three yearly training sessions, and a tenure of roughly four years with the current employer.
+
+While our analysis provides valuable insights into departmental variations and prevalent trends, it is incumbent upon us to embark on further inquiries to gain a comprehensive understanding of the underlying factors contributing to these patterns. These insights will serve as the foundation for targeted interventions and enhancements aimed at fostering a more equitable and satisfying work environment.
